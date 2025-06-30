@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// the projects doing in the github
 void main() {
   runApp(const MainApp());
 }
@@ -12,7 +12,21 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Hello World!'),
+              SizedBox(height: 20),
+              Text(
+                'Welcome to Flutter!',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
